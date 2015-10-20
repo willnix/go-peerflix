@@ -18,8 +18,8 @@ import (
 // Exit statuses.
 const (
 	_ = iota
-	exitNoTorrentProvided
-	exitErrorInClient
+	ExitNoTorrentProvided
+	ExitErrorInClient
 )
 
 const clearScreen = "\033[H\033[2J"
