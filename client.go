@@ -15,6 +15,13 @@ import (
 	"github.com/dustin/go-humanize"
 )
 
+// Exit statuses.
+const (
+	_ = iota
+	exitNoTorrentProvided
+	exitErrorInClient
+)
+
 const clearScreen = "\033[H\033[2J"
 
 var isHTTP = regexp.MustCompile(`^https?:\/\/`)
